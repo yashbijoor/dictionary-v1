@@ -1,0 +1,36 @@
+<%- include("header") -%>
+
+<div class="wrapper-wrapper">
+  <div class="container">
+    <%var a = 0;%>
+    <%var b = 0;%>
+    <%var c = 0;%>
+    <%var d = 0;%>
+    <% for(var i=0; i< no1.length; i++){ %>
+      <div class="meaning-div">
+        <% for(var j=0; j< no1[c]; j++){ %>
+          <h3><%=posList[b]%></h3>
+          <%b++;%>
+          <ul>
+            <%for(var k=0; k< no2[d]; k++){%>
+              <li><%=definition[a]%></li>
+              <%a++;%>
+            <%}%>
+            <%d++;%>
+          </ul>
+        <% } %>
+        <%c++;%>
+      </div>
+    <% } %>
+    <div class="btn-wrapper">
+      <form action="/success" method="post">
+        <button class="rtn-btn button" type="submit" name="button">Return to home</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <span class="name-text">© Yash Bijoor</span>
+  </div>
+</div>
+
+  <%- include("footer") -%>

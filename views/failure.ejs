@@ -1,0 +1,18 @@
+<%- include("header") -%>
+
+<div class="wrapper-wrapper">
+  <section id="heading">
+    <h1>Oops! Looks like there was an error!</h1>
+    <h2>Error Code: <%=code%></h2>
+  </section>
+  <div class="btn-wrapper">
+    <form action="/failure" method="post">
+      <button class="rtn-btn button" type="submit" name="button">Return to home</button>
+    </form>
+  </div>
+  <div class="footer">
+    <span class="name-text">© Yash Bijoor</span>
+  </div>
+</div>
+
+<%- include("footer") -%>

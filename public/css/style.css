@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  min-height: 100vh;
+}
+
+body{
+  background: linear-gradient(to top right, #FFFDFF, #DFF6FF);
+  min-width: 300px;
+}
+
+/* HOME PAGE */
+
+#heading{
+  margin: 5%;
+  font-size: clamp(17px, 1.7vw, 20px);
+  text-align: center;
+  font-family: 'Arvo', serif;
+}
+
+.wrapper-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item{
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-bar{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(15px, 1vw, 18px);
+  height: clamp(60px, 6vh, 80px);
+  width: clamp(144px, 8vw, 200px);
+  padding: 0 7%;
+  margin: 5px;
+  border: solid 1px grey;
+  font-weight: bold;
+}
+
+.btn{
+  margin: 5px;
+  font-size: clamp(15px, 1vw, 18px);
+  height: clamp(60px, 6vh, 80px);
+  width: clamp(144px, 8vw, 200px);
+  font-weight: bold;
+}
+
+.name-text{
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(13px, 0.8vw, 16.5px);
+  margin: 10px;
+}
+
+.footer{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* SUCCESS PAGE */
+
+ul{
+  list-style-type: disc;
+  font-size: clamp(15px, 1.5vw, 20px);
+}
+
+h3{
+  margin: 10px 0;
+  font-size: clamp(18px, 1.7vw, 23px);
+  font-family: 'Arvo', serif;
+}
+
+.container{
+  margin: 3%;
+}
+
+.meaning-div{
+  margin: 4%;
+  padding: 2%;
+  padding-left: 10%;
+  border-radius: 20px;
+  background-color: #BBECF7;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
+}
+
+.btn-wrapper{
+  text-align: center;
+}
+
+.button{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #BBECF7;
+  border: solid 1px grey;
+}
+
+.button:hover{
+  background-color: #DFF6FF;
+}
+
+.rtn-btn{
+  padding: 5px;
+  margin: 15px;
+  font-size: clamp(15px, 1.5vw, 18px);
+  height: clamp(60px, 6vh, 100px);
+  width: clamp(150px, 8vw, 230px);
+}
